@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Review</title>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/addreview.css">
+</head>
+<body>
+    <h1>Submit your review</h1>
+    <form action="/postreview2" method="POST">
+        <div class="container">
+            <label for="dishname">Dish Name</label>
+            <input type="text" id="dishname" name="dishname">
+            <label for="rating">Rating Out of 10</label>
+            <input type="number" id="rating" name="rating" min="1" max="10">
+        </div>
+        <div class="container2">
+            <label for="text">Review</label>
+            <input type="text" id="text" name="text">
+        </div>
+        <button type="submit">Submit Review</button>
+    </form>
+</body>
+</html>

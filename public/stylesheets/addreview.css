@@ -1,0 +1,40 @@
+:root {
+    --d-text: #cefdf8;
+    --d-background: #012823;
+    --d-primary: #f7263f;
+    --d-secondary: #02312c;
+    --d-accent: #f60925;
+}
+
+body {
+    background-color: var(--d-background);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 500px;
+}
+
+.container > input {
+    width: 150px;
+}
+
+.container2 > input {
+    height: 300px;
+    border: 5px solid var(--d-accent)
+}

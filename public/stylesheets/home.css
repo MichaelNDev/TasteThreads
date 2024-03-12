@@ -1,0 +1,105 @@
+:root {
+    --d-text: #cefdf8;
+    --d-background: #012823;
+    --d-primary: #f7263f;
+    --d-secondary: #02312c;
+    --d-accent: #f60925;
+}
+h1 {
+    color: var(--d-text);
+    font-size: 60px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+h2 {
+    color: var(--d-text);
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--d-background);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+        "main img-container"
+        "footer img-container";
+    overflow: hidden;
+    height: 100vh;
+}
+
+main {
+    grid-area: main;
+    padding-left: 2%;
+    padding-right: 2%;
+    min-width: 500px;
+    height: auto;
+}
+
+.options {
+    margin-top: 15%;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.button1 {
+    background-color: var(--d-primary);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--d-background);
+    margin-right: 10px;
+    text-align: center;
+    min-width: 30%;
+    max-width: 50%;
+}
+
+.button1:hover {
+    /* box-shadow: 0 0 20px white; */
+    transition: 0s;
+    color: var(--d-text);
+    border: 1px solid white;
+}
+
+.img-container {
+    /* height: fit-content;
+    width: fit-content;
+    overflow: hidden; */
+    background-image: url('/images/dishhome.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-area: img-container;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    border-top: 2px solid var(--d-secondary);
+}
+
+i {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: var(--d-text);
+}
+
+i:hover {
+    color: var(--d-accent);
+    transition: 0.5s;
+    cursor: pointer;
+}

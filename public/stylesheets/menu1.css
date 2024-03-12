@@ -1,0 +1,133 @@
+:root {
+    --d-text: #cefdf8;
+    --d-background: #012823;
+    --d-primary: #f7263f;
+    --d-secondary: #02312c;
+    --d-accent: #f60925;
+}
+
+body {
+    background-color: var(--d-background);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--d-secondary);
+    border-bottom: 1px solid red;
+}
+
+h1 {
+    color: var(--d-primary);
+    margin-top: 10px;
+    font-size: 48px;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+ 
+h1 > a {
+     color: var(--d-primary);
+     text-decoration: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: var(--d-background);
+    margin: 0;
+    padding: 5px;
+}
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button > a {
+    background-color: var(--d-primary);
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.nav-button > a:hover {
+    color: var(--d-accent);
+    background-color: white;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: white;
+}
+
+h2 {
+    color: white;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+h3 {
+    color: var(--d-primary);
+    font-size: 30px;
+}
+
+button {
+    background-color: var(--d-primary);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--d-background);
+    text-align: center;
+    max-width: 100%;
+    font-size: 20px;
+}
+
+ol {
+padding: 10px;
+}
+
+li {
+    margin-top: 10px;
+    font-size: 30px;
+ }
+
+li > a:hover {
+    color: var(--d-accent);
+    background-color: white;
+}
+
+.container {
+    border: 3px solid var(--d-primary);
+    border-radius: 5px;
+    margin-top: 2%;
+    padding: 10px;
+    background-color: white;
+}
+
+.container > h1 {
+    padding: 5px;
+}
+
+section {
+    max-height: 300px;
+    min-height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid red;
+}
+
+img {
+    object-fit: cover;
+    max-height: 30%;
+    width: 100%;
+}

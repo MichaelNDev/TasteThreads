@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truffle Delight</title>
+</head>
+<body>
+    <a href="/menu1">Return to menu</a>
+    <h1>MARGHERITA CLASSIC PAGE</h1>
+    <h3>Average Rating: <%= posts.reduce((acc,cv) => cv.rating + acc, 0) / posts.length%></h3>
+        <!-- reviews goes here -->
+        <% let jay = 0 %>
+        <ul>
+            <% for(var i=0; i<posts.length; i++) {%>
+              <p><%= posts[i].text %></p>
+              <p><%= posts[i].rating %></p>
+              <% jay += posts[i].rating%>
+            <% } %>
+        </ul>
+        <h2>Average Rating <%= jay/posts.length %></h2>
+        
+    <h3>Have a suggestion? Leave Review</h3>
+    <button><a href="/addReview">Add your review</a></button>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>A quick test to display comments.</h1>
+    <h1>THIS IS SPECIALTY 1</h1>
+        <!-- reviews goes here -->
+        <ul>
+            <% for(var i=0; i<posts.length; i++) {%>
+              <p><%= posts[i].text %></p>
+            <% } %>
+        </ul>
+    <h3>Have a suggestion? Leave Review</h3>
+    <button><a href="/addReview">Add your review</a></button>
+</body>
+</html>
