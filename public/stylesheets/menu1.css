@@ -7,12 +7,13 @@
 }
 
 body {
-    background-color: var(--d-background);
+    background-color: var(--d-secondary);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 600px;
 }
 
 nav {
@@ -111,6 +112,7 @@ li > a:hover {
     margin-top: 2%;
     padding: 10px;
     background-color: white;
+    margin-bottom: 2%;
 }
 
 .container > h1 {
@@ -129,5 +131,12 @@ section {
 img {
     object-fit: cover;
     max-height: 30%;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--d-background);
+    border-top: 1px solid var(--d-accent);
+    min-height: 70px;
     width: 100%;
 }

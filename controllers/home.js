@@ -91,8 +91,12 @@ module.exports = {
         res.render("menu1", {
         user: req.user.username
         })
-    }
-    ,
+    },
+    menu2: (req,res) => {
+        res.render("underconstruction", {
+        user: req.user.username
+        })
+    },
     dishtest: async (req,res) => {
         try {
             const posts = await Review.find()
@@ -141,11 +145,51 @@ module.exports = {
             console.log(err)
         }
     },
+    seafoodspectacular: async (req,res) => {
+        let dishName = 'seafoodspectacular'
+        try {
+            const post = await Temp(dishName).find()
+            res.render("seafoodspectacular.ejs", { posts: post, username: req.user.username })
+            console.log(req.user)
+        } catch (err) {
+            console.log(err)
+        }
+    },
+    bbqchickenfiesta: async (req,res) => {
+        let dishName = 'bbqchickenfiesta'
+        try {
+            const post = await Temp(dishName).find()
+            res.render("bbqchickenfiesta.ejs", { posts: post, username: req.user.username })
+            console.log(req.user)
+        } catch (err) {
+            console.log(err)
+        }
+    },
     margheritaclassic: async (req,res) => {
         let dishName = 'margheritaclassic'
         try {
             const post = await Temp(dishName).find()
             res.render("margheritaclassic.ejs", { posts: post, username: req.user.username })
+            console.log(req.user)
+        } catch (err) {
+            console.log(err)
+        }
+    },
+    pepperonibliss: async (req,res) => {
+        let dishName = 'pepperonibliss'
+        try {
+            const post = await Temp(dishName).find()
+            res.render("pepperonibliss.ejs", { posts: post, username: req.user.username })
+            console.log(req.user)
+        } catch (err) {
+            console.log(err)
+        }
+    },
+    veggiegarden: async (req,res) => {
+        let dishName = 'veggiegarden'
+        try {
+            const post = await Temp(dishName).find()
+            res.render("veggiegarden.ejs", { posts: post, username: req.user.username })
             console.log(req.user)
         } catch (err) {
             console.log(err)
@@ -160,6 +204,27 @@ module.exports = {
         } catch (err) {
             console.log(err)
         }
-    }
+    },
+    spicydiavola: async (req,res) => {
+        let dishName = 'spicydiavola'
+        try {
+            const post = await Temp(dishName).find()
+            res.render("spicydiavola.ejs", { posts: post, username: req.user.username })
+            console.log(req.user)
+        } catch (err) {
+            console.log(err)
+        }
+    },
+    pestochicken: async (req,res) => {
+        let dishName = 'pestochicken'
+        try {
+            const post = await Temp(dishName).find()
+            res.render("pestochicken.ejs", { posts: post, username: req.user.username })
+            console.log(req.user)
+        } catch (err) {
+            console.log(err)
+        }
+    },
+
     
 }

@@ -68,6 +68,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     min-height: 600px;
+    width: auto;
 }
 .first-half {
     display: flex;
@@ -77,9 +78,10 @@ main {
     /* background-color: antiquewhite; */
     max-width: 60%;
     min-width: 50%;
-    background-image: url(/images/truffledelight.jpeg);
+    /* background-image: url(/images/margpizza.webp); */
     background-repeat: none;
     background-size: cover;
+    margin-left: -5%;
 }
 
 .title-container {

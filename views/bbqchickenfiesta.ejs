@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Margherita Classic</title>
+    <title>BBQ Chicken Fiesta</title>
     <link rel="stylesheet" href="/stylesheets/reset.css">
     <link rel="stylesheet" href="/stylesheets/pizzas.css">
     <style>
         .first-half {
-            background-image: url(/images/margpizza.webp);
+            background-image: url(/images/bbqpizza.webp);
         }
     </style>
 </head>
@@ -24,7 +24,7 @@
     <main>
         <div class="first-half">
             <div class="title-container">
-                <h1 class="dish-title">Margherita Classic</h1>
+                <h1 class="dish-title">BBQ Chicken Fiesta</h1>
                 <h3>AVG RATING: <%= (posts.reduce((acc,cv) => cv.rating + acc, 0) / posts.length).toFixed(1) %> </h3>
             </div>
         </div>
