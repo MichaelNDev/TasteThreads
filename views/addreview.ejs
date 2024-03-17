@@ -8,19 +8,29 @@
     <link rel="stylesheet" href="/stylesheets/addreview.css">
 </head>
 <body>
-    <h1>Submit your review</h1>
-    <form action="/postreview2" method="POST">
-        <div class="container">
-            <label for="dishname">Dish Name</label>
-            <input type="text" id="dishname" name="dishname">
-            <label for="rating">Rating Out of 10</label>
-            <input type="number" id="rating" name="rating" min="1" max="10">
-        </div>
-        <div class="container2">
-            <label for="text">Review</label>
-            <input type="text" id="text" name="text">
-        </div>
-        <button type="submit">Submit Review</button>
-    </form>
+    <nav>
+        <h1 href="/">TasteThreads</h1>
+        <div class="nav-buttons">
+            <a href="/dashboard">Menu Selection</a>
+            <a href="/menu1">Return to menu</a>
+            <a href="/logout">Logout</a>
+        </div>  
+    </nav>
+    <main>
+        <h1>Submit your review</h1>
+        <form action="/postreview2" method="POST">
+            <div class="container2">
+                <!-- <label for="text">Review</label> -->
+                <textarea type="text" id="text" name="text" rows="4" cols="50" maxlength="300"></textarea>
+            </div>
+            <div class="container">
+                <label for="dishname">Dish Name</label>
+                <input type="text" id="dishname" name="dishname">
+                <label for="rating">Rating Out of 10</label>
+                <input type="number" id="rating" name="rating" min="1" max="10">
+            </div>
+            <button type="submit">Submit Review</button>
+        </form>
+    </main>
 </body>
 </html>
