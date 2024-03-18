@@ -79,6 +79,7 @@ main {
     justify-content: space-evenly;
     background-color: var(--d-secondary);
     border-top: 1px solid var(--d-accent);
+    border-bottom: 1px solid var(--d-accent);
 }
 
 h2 {
