@@ -1,4 +1,5 @@
 const mongoose = require("mongoose")
+const { Schema } = mongoose
 
 const DishReviewSchema = new mongoose.Schema({
   text: {
@@ -15,6 +16,11 @@ const DishReviewSchema = new mongoose.Schema({
   },
   user: {
     type: String,
+    required: true
+  },
+  userid: {
+    type: Schema.Types.ObjectId, 
+    ref: 'User',
     required: true
   }
   // username: { 

@@ -12,7 +12,7 @@ const flash = require("express-flash")
 const session = require('express-session')
 // Require mongoose package
 const mongoose = require('mongoose')
-// Something...
+// ...
 const MongoStore = require("connect-mongo")
 // Routes for home
 const homeRoutes = require("./routes/home")
@@ -27,7 +27,7 @@ require("./config/passport")(passport)
 // Call the connect function
 connectDB()
 
-// Something... Something... Session...
+// ...
 app.use(session({
 	secret: "keyboard cat",
     resave: false,
@@ -42,12 +42,12 @@ app.use(session({
 app.set("view engine", "ejs")
 // Setting our static files in public
 app.use(express.static("public"))
-// Something...
+// ...
 app.use(express.json())
 // Need this when using FORMS
 app.use(express.urlencoded({extended: true}))
 
-// Something...
+// ...
 app.use(passport.initialize())
 app.use(passport.session())
 
