@@ -17,7 +17,7 @@
         <h1 href="/">TasteThreads</h1>
         <div class="nav-buttons">
             <a href="/dashboard">Menu Selection</a>
-            <a href="/menu1">Return to menu</a>
+            <a href="/menu3">Return to menu</a>
             <a href="/logout">Logout</a>
         </div>  
     </nav>
@@ -34,9 +34,11 @@
                 <ul>
                         <% for(var i = posts.length - 1; i >= 0; i--) {%>
                             <li>
-                                <p><span style="color: red">User:</span> <%= posts[i].user || "Anonymous" %></p>
-                                <p><span style="color: red">Rating:</span> <%= posts[i].rating %></p>
-                                <p><span style="color: red">Date:</span> <%= posts[i].date.toDateString() %></p>
+                                <div class="innter-review">
+                                    <p><span style="color: red">User:</span> <%= posts[i].user || "Anonymous" %></p>
+                                    <p><span style="color: red">Rating:</span> <%= posts[i].rating %></p>
+                                    <p><span style="color: red">Date:</span> <%= posts[i].date.toDateString() %></p>
+                                </div>
                                 <p><span style="color: red">Review:</span> <br> <%= posts[i].text %></p>
                             </li>
                         <% } %>

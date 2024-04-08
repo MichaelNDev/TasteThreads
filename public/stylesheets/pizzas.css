@@ -145,6 +145,15 @@ h2 {
 
 }
 
+.review-container > ul > li {
+    padding-right: 0px;
+}
+
+.inner-review {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 ::-webkit-scrollbar {
